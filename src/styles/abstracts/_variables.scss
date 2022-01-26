@@ -1,0 +1,22 @@
+@use 'functions' as *;
+@use 'colors' as *;
+
+$form-container__card-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+$form-container__card-border-radius: rem(10);
+$form-button-border-radius: rem(5);
+$form-button-box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+$form-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+$form-border-radius: rem(10);
+$hero-padding-sm: rem(88) rem(24) rem(68) rem(24);
+$hero-padding: rem(121) rem(165);
+$form-container__card-margin-top: rem(64);
+$form-container__card-margin-bottom: rem(24);
+$form-container__card-padding-sm: rem(18) rem(66);
+$form-container__card-padding: rem(16) rem(112);
+$form-input-border: 1px solid #dedede;
+$form-input-border-focus: 1px solid $theme-text-neutral;
+$form-input-border-radius: rem(5);
+$form-input-padding-vertical: rem(15);
+$form-input-padding-horizontal: rem(19.41);
+$transition: 0.2s all ease-in;
+$form-error-margin-top: rem(6);

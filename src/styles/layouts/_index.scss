@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+body {
+  width: 100%;
+  font-family: $fonts;
+  color: $theme-text-primary;
+}
+
+h1 {
+  position: absolute;
+  left: -10000px;
+}

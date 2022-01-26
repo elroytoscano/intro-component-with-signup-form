@@ -1,0 +1,41 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/colors' as *;
+
+$heading-font-size-sm: rem(28);
+$heading-font-size: rem(50);
+$heading-line-height-sm: rem(36);
+$heading-line-height: rem(55);
+$heading-font-weight: 700;
+$heading-letter-spacing-sm: rem(-0.29);
+$heading-letter-spacing: rem(-0.52);
+
+$para-font-size-sm: rem(16);
+$para-line-height-sm: rem(26);
+$para-font-weight: 500;
+
+$card-text-font-size-sm: rem(15);
+$card-letter-spacing: rem(0.27);
+$card-heading-font-weight: 600;
+$card-para-font-weight: 400;
+$card-text-line-height: rem(26);
+
+$form-text-font-size: rem(14);
+$form-text-focus-font-size: rem(10);
+$form-text-font-weight: 600;
+$form-text-line-height: rem(26);
+$form-text-letter-spacing: rem(0.25);
+
+$form-button-font-size: rem(15);
+$form-button-letter-spacing: rem(1);
+$form-button-line-height: rem(26);
+$form-button-font-weight: 600;
+
+$form-info-font-size: rem(11);
+$form-info-line-height: rem(26);
+$form-info-heading-font-weight: 700;
+$form-info-para-font-weight: 500;
+
+$form-error-font-size: rem(11);
+$form-error-line-height: rem(16.5);
+$form-error-font-weight: 500;
+$form-error-color: $theme-bg;

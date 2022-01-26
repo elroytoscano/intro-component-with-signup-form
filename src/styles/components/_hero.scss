@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.hero {
+  min-height: 100vh;
+  background: url('/images/bg-intro-mobile.png');
+  background-color: $theme-bg;
+  background-position-x: center;
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $hero-padding-sm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint(md) {
+    background: url('/images/bg-intro-desktop.png');
+    background-color: $theme-bg;
+    background-position-x: center;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-size: cover;        
+  }
+
+  @include breakpoint(xxl){
+    flex-direction: row;
+    justify-content: space-between;
+    gap: rem(45);
+    padding: $hero-padding;
+  }
+
+}

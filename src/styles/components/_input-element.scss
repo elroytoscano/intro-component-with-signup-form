@@ -1,0 +1,104 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.input-element {
+  position: relative;
+  transition: $transition;
+
+  @include breakpoint(lg) {
+    width: 100%;
+  }
+
+  &-text {
+    width: 100%;
+    padding: $form-input-padding-vertical $form-input-padding-horizontal;
+    border-radius: $form-input-border-radius;
+    border: $form-input-border;
+    font-size: $form-text-font-size;
+    line-height: $form-text-line-height;
+    letter-spacing: $form-text-letter-spacing;
+    font-weight: $form-text-font-weight;
+    color: $theme-form-input;
+    caret-color: $theme-text-secondary;
+
+    &:focus,
+    &:active {
+      border-color: $theme-text-secondary;
+    }
+
+    &:focus ~ label {
+      padding-right: rem(4);
+      top: (-1 * $form-input-padding-vertical) + 0.125;
+      background-color: white;
+      font-size: $form-text-focus-font-size;
+    }
+
+    &:not(:placeholder-shown) ~ label {
+      padding-right: rem(4);
+      top: (-1 * $form-input-padding-vertical) + 0.125;
+      background-color: white;
+      font-size: $form-text-focus-font-size;
+    }
+
+    &-text:valid ~ .validation-icon {
+      opacity: 0;
+    }
+
+    &-text:valid ~ .validation-text {
+      opacity: 0;
+    }
+  }
+
+  &-label {
+    padding-left: rem(6);
+    transition: $transition;
+    position: absolute;
+    top: $form-input-padding-vertical;
+    left: $form-input-padding-horizontal;
+    color: $theme-form-placeholder;
+    font-size: $form-text-font-size;
+    line-height: $form-text-line-height;
+    letter-spacing: $form-text-letter-spacing;
+    font-weight: $form-text-font-weight;
+    cursor: text;
+
+    &:focus {
+      padding-right: rem(6);
+      top: (-1 * $form-input-padding-vertical) + 0.125;
+      background-color: white;
+      font-size: $form-text-focus-font-size;
+    }
+  }
+
+  .validation-icon {
+    position: absolute;
+    content: url('../../../images/icon-error.svg');
+    top: $form-input-padding-vertical;
+    right: $form-input-padding-horizontal;
+    opacity: 0;
+    transition: $transition;
+  }
+
+  .validation-icon .show {
+    opacity: 1;
+  }
+
+  .validation-text {
+    transition: $transition;
+    font-size: $form-error-font-size;
+    font-weight: $form-error-font-weight;
+    line-height: $form-error-line-height;
+    color: $form-error-color;
+    text-align: right;
+    margin-top: $form-error-margin-top;
+    opacity: 0;
+  }
+
+  .validation-text .show {
+    opacity: 1;
+  }
+
+  .show {
+    opacity: 1;
+  }
+}

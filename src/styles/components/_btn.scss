@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.btn {
+  width: 100%;
+  height: rem(56);
+  border-radius: $form-button-border-radius;
+  border: none;
+  color: $theme-card-bg;
+  background-color: $theme-accent;
+  transition: $transition;
+  cursor: pointer;
+  font-size: $form-button-font-size;
+  font-weight: $form-button-font-weight;
+  box-shadow: $form-button-box-shadow;
+
+  &:hover,
+  &:focus {
+    background-color: $theme-accent-hover;
+  }
+
+  @include breakpoint(lg) {
+    letter-spacing: $form-button-letter-spacing;
+  }
+}

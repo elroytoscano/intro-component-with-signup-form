@@ -1,0 +1,55 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  @include breakpoint(sm) {
+    width: rem(327);
+  }    
+
+  @include breakpoint(md) {
+    width: rem(525);
+    gap:1.5rem;
+  }
+
+  @include breakpoint(xxl) {
+    justify-content: flex-start;
+    width: rem(525);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__header {
+    text-align: center;
+    font-size: $heading-font-size-sm;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height-sm;
+    letter-spacing: $heading-letter-spacing-sm;
+
+    @include breakpoint(md) {
+      font-size: $heading-font-size;
+      line-height: $heading-line-height;
+      letter-spacing: $heading-letter-spacing;
+    }
+
+    @include breakpoint(xxl) {
+      text-align: left;
+    }
+  }
+
+  &__para {
+    text-align: center;
+    font-size: $para-font-size-sm;
+    line-height: $para-line-height-sm;
+    font-weight: $para-font-weight;
+
+    @include breakpoint(xxl) {
+      text-align: left;
+    }
+  }
+}

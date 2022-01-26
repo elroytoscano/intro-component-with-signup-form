@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.submitBtn=exports.password=exports.lastName=exports.firstName=exports.email=void 0;var submitBtn=document.querySelector("#submitBtn");exports.submitBtn=submitBtn;var form=document.querySelector("#signup-form"),firstName=form.elements.name;exports.firstName=firstName;var lastName=form.elements["last-name"];exports.lastName=lastName;var email=form.elements.email;exports.email=email;var password=form.elements.password;exports.password=password;
+//# sourceMappingURL=selectors.js.map

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro Component with Signup Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script type="module" defer src="/dist/app.js"></script>
+  </head>
+  <body>
+    <h1>Intro form component with sign up form</h1>
+    <main class="hero">
+      <article class="hero-content">
+        <h2 class="hero-content__header animate__animated animate__slideInDown">
+          Learn to code by watching others
+        </h2>
+        <p class="hero-content__para animate__animated animate__slideInUp">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </article>
+      <div class="hero-cta">
+        <div class="hero-cta__card animate__animated animate__fadeIn">
+          <h3 class="hero-cta__card-header">
+            Try it free 7 days
+            <span class="hero-cta__card-text">then $20/mo. thereafter</span>
+          </h3>
+        </div>
+        <form class="hero-cta__form" id="signup-form">
+          <div class="input-element">
+            <input
+              type="text"
+              aria-label="Your first name"
+              required
+              class="input-element-text"
+              id="name"
+              placeholder=" "
+            />
+            <label for="name" class="input-element-label">First name</label>
+            <span class="validation-icon"></span>
+            <div class="validation-text">
+              <em class="text-content"> </em>
+            </div>
+          </div>
+          <div class="input-element">
+            <input
+              id="last-name"
+              type="text"
+              aria-label="Your last name"
+              class="input-element-text"
+              required
+              placeholder=" "
+              name="last-name"
+            />
+            <label for="last-name" class="input-element-label">Last name</label>
+            <span class="validation-icon"></span>
+            <div class="validation-text">
+              <em class="text-content"> </em>
+            </div>
+          </div>
+          <div class="input-element">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              aria-label="Your email address"
+              id="email"
+              class="input-element-text"
+              required
+              placeholder=" "
+            />
+            <label for="email" class="input-element-label">Email</label>
+            <span class="validation-icon"></span>
+            <div class="validation-text">
+              <em class="text-content"> </em>
+            </div>
+          </div>
+          <div class="input-element">
+            <input
+              type="password"
+              name="password"
+              class="input-element-text"
+              id="password"
+              aria-label="Your password"
+              required
+              placeholder=" "
+            />
+            <label for="password" class="input-element-label">Password</label>
+            <span class="validation-icon"></span>
+            <div class="validation-text">
+              <em class="text-content"> </em>
+            </div>
+          </div>
+          <div class="input-element animate__animated animate__pulse">
+            <button type="submit" id="submitBtn" class="btn">
+              CLAIM YOUR FREE TRIAL
+            </button>
+          </div>
+          <p class="hero-cta__form-terms">
+            By clicking the button, you are agreeing to our
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero-cta__form-terms-heading"
+              >Terms & Services</a
+            >
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

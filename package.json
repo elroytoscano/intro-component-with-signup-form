@@ -1,0 +1,26 @@
+{
+  "name": "intro-component-with-signup-form",
+  "version": "1.0.0",
+  "description": "Frontend Mentor project for an Intro Component with Sign Up Form",
+  "main": "index.js",
+  "author": "Elroy Toscano",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.2",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.7",
+    "core-js": "^3.20.3",
+    "cssnano": "^5.0.16",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.5",
+    "sass": "^1.49.0"
+  }
+}
